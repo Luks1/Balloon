@@ -8,6 +8,22 @@ var fixedOnes = myOder.split(",");
 //spliting my second line
 var fixPr = prices.split(",");
 //printing out the first one
-console.log(fixPr);
+ console.log(fixPr);
 // printing out second one
 console.log(fixedOnes);
+
+var rep = myOder.replace(/sets of/g,"");
+console.log(rep);
+var em = [];
+
+fixedOnes.forEach(function(ab){
+  em.push(ab.split("sets of"))
+});
+
+console.log(em);
+// var say =[];
+//
+// fixedOnes.forEach(function(ac){
+//   say.push(Number(ac[0]* 3)) +" "+ ac[1]
+// });
+// console.log(say);
