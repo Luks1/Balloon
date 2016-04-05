@@ -1,3 +1,7 @@
 first store my oder in array
 store my prices also in array
 then split both seperately
+the am removing "sets of" by replacing it by space
+and store them into an array
+I have to find out how many balloons for each sets by multiplying each set by 3
+Calculating the cost of all balloons
