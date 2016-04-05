@@ -8,12 +8,6 @@ console.log(fixedOnes);
 
 
 
-// // // also here store prices array
-// var prices = "R4 for red, R5 for blue, R5.50 for yellow"
-// var fixPr = prices.split(",");
-//  console.log(fixPr);
-//
-
  // also here store prices array
  var prices = "R4 for red, R5 for blue,and R5.50 for yellow";
  var fixPr = prices.split(",");
