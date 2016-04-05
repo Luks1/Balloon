@@ -21,9 +21,10 @@ fixedOnes.forEach(function(ab){
 });
 
 console.log(em);
-// var say =[];
-//
-// fixedOnes.forEach(function(ac){
-//   say.push(Number(ac[0]* 3)) +" "+ ac[1]
-// });
-// console.log(say);
+var say =[];
+
+fixedOnes.forEach(function(ac){
+
+  say.push(Number(ac[0]*3))
+});
+console.log(say);
