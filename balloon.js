@@ -1,30 +1,54 @@
 
-//store them in array
+//store my oder in array
 var myOder = "4 sets of red, 3 sets of blue, 3 sets of yellow";
-// also here store in array
-var prices = "R4 for red, R5 for blue, R5.50 for yellow"
-// spliting my first line
 var fixedOnes = myOder.split(",");
-//spliting my second line
-var fixPr = prices.split(",");
-//printing out the first one
- console.log(fixPr);
-// printing out second one
 console.log(fixedOnes);
 
-var rep = myOder.replace(/sets of/g,"");
-console.log(rep);
-var em = [];
 
+
+
+
+// // // also here store prices array
+// var prices = "R4 for red, R5 for blue, R5.50 for yellow"
+// var fixPr = prices.split(",");
+//  console.log(fixPr);
+//
+
+ // also here store prices array
+ var prices = "R4 for red, R5 for blue,and R5.50 for yellow";
+ var fixPr = prices.split(",");
+  console.log(fixPr)
+
+
+  ;
+//creating array
+ var read = [];
+//looping ,replacing them and push to the array
+ fixPr.forEach(function(ls){
+   read.push(ls.replace("R", "")
+               .replace("for", ",")
+               .replace("and", "")
+                .split(","));
+
+ });
+ console.log(read);
+
+
+
+
+//looping , spliting and push sametime
+var em = [];
 fixedOnes.forEach(function(ab){
   em.push(ab.split("sets of"))
 });
-
 console.log(em);
+
+
+
+
+//finding numbers for each oder *3
 var say =[];
-
-fixedOnes.forEach(function(ac){
-
-  say.push(Number(ac[0]*3))
+em.forEach(function(ac){
+say.push(Number(ac[0]*3)+" "+ ac[1]);
 });
 console.log(say);
