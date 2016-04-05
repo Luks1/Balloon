@@ -1,7 +1,9 @@
 first store my oder in array
 store my prices also in array
-then split both seperately
-the am removing "sets of" by replacing it by space
+then split both separately
+then am removing "sets of" by replacing it by space
 and store them into an array
 I have to find out how many balloons for each sets by multiplying each set by 3
 Calculating the cost of all balloons
+calculating extra cost if its R2 for each
+then have to find out that i can have any spare if 25 people can come
