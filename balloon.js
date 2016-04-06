@@ -7,7 +7,6 @@ console.log(fixedOnes);
 
 
 
-
  // also here store prices array
  var prices = "R4 for red, R5 for blue,and R5.50 for yellow";
  var fixPr = prices.split(",");
@@ -40,9 +39,15 @@ console.log(em);
 
 
 
-//finding numbers for each oder *3
-var say =[];
-em.forEach(function(ac){
-say.push(Number(ac[0]*3)+" "+ ac[1]);
-});
-console.log(say);
+//looping through both my arrays
+for(i=0; i<em.length; i++){
+//printing out the numbers from strings
+ console.log(em[i][0]);
+ console.log(read[i][0]);
+//giving my them a values so that i can be able to calculate
+var num = em[i][0];
+ var mun = read[i][0];
+//finding out the total
+ var total = num*mun;
+ console.log(total);
+}
